@@ -1,7 +1,6 @@
 body {
 	margin: 0px;
-	padding: 0px;
-	height: 100%;
+	padding: 0px;	
 	background: url(altitude-calm-cliff-552784.jpg) no-repeat center top / cover;	
 	font-family: 'Mukta', sans-serif;	
 	color: #2C3E50	
@@ -50,8 +49,7 @@ footer a:hover {
 }
 
 .cloud {	
-	width: 100%;
-	height: 100%;
+	height: 3000px;
 	background: url(cloud.png) no-repeat center top / cover;
 	animation: animate 60s linear infinite;
 }
@@ -234,3 +232,14 @@ footer {
 	justify-content: center;
 	
 }
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait)
+	{
+		.container {
+			max-width: 720px;
+			width: 100%;
+	}
