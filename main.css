@@ -1,0 +1,235 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(altitude-calm-cliff-552784.jpg) no-repeat center top / cover;	
+	font-family: 'Mukta', sans-serif;	
+	color: #2C3E50	
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	font-family: 'Pacifico', cursive;
+	color: #2C3E50;
+	opacity:0;
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; /
+	animation-delay: 1s;
+}
+
+a {
+	text-decoration: none;
+	color: #2C3E50;
+	transition: 0.7s;
+}
+
+a:hover {
+	color: #3498DB;	
+}
+
+footer a:hover {
+	color: #5DADE2;
+}
+
+.name:hover {
+	color: #5DADE2;	
+}
+
+.container {
+	max-width: 1020px;
+	width: 100%;
+	margin: 0px auto;	
+}
+
+.cloud {	
+	width: 100%;
+	height: 100%;
+	background: url(cloud.png) no-repeat center top / cover;
+	animation: animate 60s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: -5440px;
+	}
+}
+
+header {
+	padding: 20px;
+}
+
+/*********************************** ABOUT SECTION START ***********************************/
+
+.about-content {
+	display: flex;	
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.about-content__photo {	
+	width: 250px;
+	height: 250px;
+	background: url(photo.png) no-repeat center top / cover;	
+	opacity:0; 
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2s; 
+}
+
+@keyframes show{
+	0%{
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+.about-content__text{
+	opacity:0; 
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1.5s;
+}
+
+.name {
+	font-size: 33px;	
+	margin-bottom: 20px;
+	transition: 0.7s;
+}
+
+.social {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+/* Education start */
+
+.education {
+	margin-top: 50px;
+	height: 1100px;
+	opacity: 0; 
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2s; 
+}
+
+.education-item {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+summary {
+	font-size: 33px;
+	transition: 0.7s;
+	outline:none;
+}
+
+summary:hover {
+	color: #5DADE2;	
+}
+
+.education-content {
+	font-size: 25px;
+}
+
+details[open] summary ~ * {
+	animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+	0%    {opacity: 0; margin-left: -10px}
+	100%  {opacity: 1; margin-left: 0px}
+}
+
+/* portfolio */
+
+.projects {
+	margin-top: 70px;	
+}
+
+.projects-title {
+	font-size: 33px;
+	margin-bottom: 50px;	
+}
+
+details summary::-webkit-details-marker {
+	display:none;
+}
+
+summary::marker {
+  display: none;
+}
+
+.project-text {
+	font-size: 25px;
+}
+
+.click-to-see {
+	margin-top: 70px;
+	border: 1px solid #2C3E50;
+	padding: 13px;
+	transition: 0.5s;
+}
+
+.click-to-see:hover {
+	color: #7D3C98;
+	border: 1px solid #7D3C98;	
+}
+
+.project-photo {
+	margin-left: 20px;
+}
+
+.project-title {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+/* footer start */
+
+footer {
+	opacity:0; 
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 2.2s; 
+}
+
+.footer-content .name {
+	font-size: 24px;
+	transition: 0.7s;
+}
+
+.footer-content {	
+	display: flex;
+	justify-content: space-around;
+	font-size: 24px;
+	height: 50px;
+}
+
+/* slider */
+
+.swiper-container {
+    width: 900px;
+}
+
+.sflex {
+	display: flex;
+	justify-content: center;
+	
+}
