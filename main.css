@@ -45,7 +45,9 @@ footer a:hover {
 .container {
 	max-width: 1020px;
 	width: 100%;
-	margin: 0px auto;	
+	margin: 0px auto;
+	padding-left: 10px;
+	padding-right: 10px;	
 }
 
 .cloud {	
@@ -118,7 +120,7 @@ header {
 
 .education {
 	margin-top: 50px;
-	height: 1100px;
+	height: 550px;
 	opacity: 0; 
 	transition: 1s; 
 	animation: show 3s 1; 
@@ -130,6 +132,10 @@ header {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
+}
+
+.education-item__text {
+	max-width: 75%;
 }
 
 summary {
@@ -167,7 +173,7 @@ details[open] summary ~ * {
 }
 
 details summary::-webkit-details-marker {
-	display:none;
+	color: #5DADE2;
 }
 
 summary::marker {
