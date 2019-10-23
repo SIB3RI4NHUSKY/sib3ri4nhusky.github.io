@@ -71,9 +71,7 @@ header {
 .about-content {
 	display: flex;	
 	justify-content: space-between;
-	margin-top: 50px;
-	margin-right: 15px;
-	margin-left: 15px
+	margin-top: 50px;	
 }
 
 .about-content__photo {	
@@ -199,7 +197,7 @@ details summary::-webkit-details-marker {
 }
 
 summary::marker {
-  display: none;
+	display: none;
 }
 
 .project-text {
@@ -252,7 +250,7 @@ footer {
 /* slider */
 
 .swiper-container {
-    width: 900px;
+	width: 900px;
 }
 
 .sflex {
@@ -266,8 +264,22 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait)
-	{
-		.container {
-			max-width: 720px;
-			width: 100%;
+{
+	.container {
+		max-width: 720px;
+		width: 100%;
 	}
+	.education {
+		margin-right: 15px;
+		margin-left: 15px
+	}
+	.about-content {		
+		margin-right: 15px;
+		margin-left: 15px
+	}
+	.experience {
+		margin-right: 15px;
+		margin-left: 15px
+	}
+
+}
