@@ -1,9 +1,9 @@
 body {
 	margin: 0px;
 	padding: 0px;	
-	background: url(altitude-calm-cliff-552784.jpg) no-repeat center top / cover;	
+	background: url(pink_sunrise_snowy_mountains_winter-wallpaper-3554x1999.jpg) no-repeat center top / cover;
 	font-family: 'Mukta', sans-serif;	
-	color: #2C3E50	
+	color: #2C3E50;	   
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 	transition: 1s; 
 	animation: show 3s 1; 
 	animation-fill-mode: forwards; /
-	animation-delay: 1s;
+	animation-delay: 1s;	
 }
 
 a {
@@ -38,6 +38,10 @@ footer a:hover {
 	color: #5DADE2;
 }
 
+h1:hover {
+	color: #5DADE2;
+}
+
 .name:hover {
 	color: #5DADE2;	
 }
@@ -45,10 +49,10 @@ footer a:hover {
 .container {
 	max-width: 1020px;
 	width: 100%;
-	margin: 0px auto;		
+	margin: 0px auto;
 }
 
-.cloud {	
+.wrapper {	
 	background: url(cloud.png) no-repeat center top / cover;
 	animation: animate 60s linear infinite;
 }
@@ -71,18 +75,18 @@ header {
 .about-content {
 	display: flex;	
 	justify-content: space-between;
-	margin-top: 50px;	
+	margin-top: 50px;
 }
 
 .about-content__photo {	
 	width: 250px;
-	height: 250px;
+	height: 250px;		
 	background: url(photo.png) no-repeat center top / cover;	
 	opacity:0; 
 	transition: 1s; 
 	animation: show 3s 1; 
 	animation-fill-mode: forwards; 
-	animation-delay: 2s; 
+	animation-delay: 2.5s; 
 }
 
 @keyframes show{
@@ -116,22 +120,13 @@ header {
 /* Education start */
 
 .education {
-	margin-top: 50px;	
+	margin-top: 50px;
+	height: 1700px;		
 	opacity: 0; 
 	transition: 1s; 
 	animation: show 3s 1; 
 	animation-fill-mode: forwards; 
-	animation-delay: 2s; 
-}
-
-.experience {
-	margin-top: 50px;	
-	margin-bottom: 50px;
-	opacity: 0; 
-	transition: 1s; 
-	animation: show 3s 1; 
-	animation-fill-mode: forwards; 
-	animation-delay: 2s; 
+	animation-delay: 3s; 
 }
 
 .education-item {
@@ -140,18 +135,21 @@ header {
 	margin-top: 20px;
 }
 
-.title-of-organization{
-	color: #3498DB;
-}
-
 .education-item__text {
 	max-width: 75%;
 }
 
-
 .education-item__text div {
 	margin-bottom: 10px;
 }
+
+ .title-of-organization {
+ 	color: #5DADE2;
+ }
+
+ .education-item__date {
+ 	color: #5b2c6f;
+ }
 
 summary {
 	font-size: 33px;
@@ -167,13 +165,13 @@ summary:hover {
 	font-size: 25px;
 }
 
-details {
-	margin-right: 15px;
-	margin-left: 15px
+details{
+	margin-bottom: 25px;	
 }
 
+
 details[open] summary ~ * {
-	animation: sweep .5s ease-in-out;
+	animation: sweep 1s ease-in-out;
 }
 
 @keyframes sweep {
@@ -184,7 +182,8 @@ details[open] summary ~ * {
 /* portfolio */
 
 .projects {
-	margin-top: 70px;	
+	margin-top: 70px;
+	margin-bottom: 60px;	
 }
 
 .projects-title {
@@ -193,11 +192,11 @@ details[open] summary ~ * {
 }
 
 details summary::-webkit-details-marker {
-	color: #5DADE2;
+	display:none;
 }
 
 summary::marker {
-	display: none;
+  display: none;
 }
 
 .project-text {
@@ -250,7 +249,7 @@ footer {
 /* slider */
 
 .swiper-container {
-	width: 900px;
+    width: 900px;
 }
 
 .sflex {
@@ -259,27 +258,11 @@ footer {
 	
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait)
-{
-	.container {
-		max-width: 720px;
-		width: 100%;
-	}
-	.education {
-		margin-right: 15px;
-		margin-left: 15px
-	}
-	.about-content {		
-		margin-right: 15px;
-		margin-left: 15px
-	}
-	.experience {
-		margin-right: 15px;
-		margin-left: 15px
-	}
+.swicus {
+	color:  #8e44ad;
+	transition: 0.5s;  
+}
 
+.swicus:hover {
+	color: #5DADE2;	
 }
