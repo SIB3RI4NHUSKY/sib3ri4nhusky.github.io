@@ -1,0 +1,225 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;		  
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;		
+}
+
+.container {
+	max-width: 1220px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	height: 48px;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+}
+
+.menu-title {
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+}
+
+h1 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.menu {
+	width: 18px;
+	height: 12px;
+	margin-left: 16px;
+	margin-right: 35px;
+	cursor: pointer;
+}
+
+.menu-dot {
+	width: 4px;
+	height: 16px;
+	margin-right: 20px;
+	cursor: pointer;
+	margin-top: 12px;
+}
+
+/************************************ WORKAREA START *****************************/
+
+.workarea {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.541327);
+}
+
+.interface {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tools {
+	margin-top: 50px;	
+	width: 228px;
+	height: 246px;
+	-webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);	
+	margin-left: 14px;
+}
+
+.tools-row {
+	display: flex;
+	align-items: center;
+	width: 196px;
+	height: 48px;
+	margin-left: 18px;
+	margin-top: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.tools-row:hover {
+	color: #3498db;
+}
+
+.tools-name {
+	margin-left: 35px; 	
+}
+
+.colors {
+	width: 228px;
+	height: 246px;
+	-webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	margin-top: 52px;
+	margin-left: 14px;
+	/*border: 1px solid cyan;*/
+}
+
+.colors-row {
+	display: flex;
+	align-items: center;
+	width: 196px;
+	height: 48px;
+	margin-left: 18px;
+	margin-top: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.colors-row:hover {
+	color: #3498db;
+}
+
+.colors-view-grey {
+	width: 20px;
+	height: 20px;
+	background: #C4C4C4;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.colors-view-green {
+	width: 20px;
+	height: 20px;
+	background: #41F795;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+.colors-view-red {
+	width: 20px;
+	height: 20px;
+	background: #F74141;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.colors-view-blue {
+	width: 20px;
+	height: 20px;
+	background: #41B6F7;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.colors-name {
+	margin-left: 35px;
+	cursor: pointer;
+	
+}
+
+.canvas-area {
+	margin-top: 52px;
+}
+
+canvas{
+	image-rendering: optimizeSpeed;             /* Older versions of FF          */
+	image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+	image-rendering: -webkit-optimize-contrast; /* Safari                        */
+	image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+	image-rendering: pixelated;                 /* Awesome future-browsers       */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+
+
+.view-switcher {	
+	width: 228px;
+	height: 220px;
+	-webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+	margin-top: 52px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 14px;
+
+}
+
+.btn-switcher {
+	display: block;
+	width: 90%;
+	height: 60px;
+	margin-top: 10px;	
+	background: #f2f4f4;
+	border: none;
+	transition: 0.5s;
+	border: 1px solid #abb2b9;
+	cursor: pointer;
+	color: #566573;
+}
+
+.btn-switcher:hover {
+	background: transparent;
+	color: #2e86c1;
+	border: 1px solid #2e86c1;
+}
+
