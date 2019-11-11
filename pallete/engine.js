@@ -16,6 +16,10 @@ let minSizeStyle = document.getElementById("minSize"); // Indicate active tool
 let medSizeStyle = document.getElementById("medSize"); // Indicate active tool
 let maxSizeStyle = document.getElementById("maxSize"); // Indicate active tool
 
+let actualColorStyle = document.getElementById("actualColor"); // Indicate active tool
+let prevColorStyle = document.getElementById("prev-color"); // Indicate active tool
+
+
 // Additional Colors
 let firstColor = "#790604";
 let secondColor = "#00BFFF";
@@ -24,16 +28,16 @@ function cherrylips() {
 	prevColor = color;
 	alert(prevColor)
 	color = firstColor;
-	document.getElementById("actualColor").style.background = color;
-	document.getElementById("prev-color").style.background = prevColor;
+	actualColorStyle.style.background = color;
+	prevColorStyle.style.background = prevColor;
 }
 
 function coldsiberia() {
 	prevColor = color;
 	alert(prevColor)
 	color = secondColor;
-	document.getElementById("actualColor").style.background = color;
-	document.getElementById("prev-color").style.background = prevColor;
+	actualColorStyle.style.background = color;
+	prevColorStyle.style.background = prevColor;
 }
 
 // Coordinats
@@ -47,7 +51,7 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
 	canvas.width = 512; // Set the canvas width
 	canvas.height = 512; // Set the canvas height
 	changeTool();
-	document.getElementById("actualColor").style.background = color;
+	actualColorStyle.style.background = color;
 
       function changeTool () { // Chnage active tool
 
@@ -135,9 +139,9 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
       function change(e){  	
       	prevColor = color;
       	alert(prevColor);
-      	document.getElementById("prev-color").style.background = prevColor;
+      	prevColorStyle.style.background = prevColor;
       	color = this.value;
-      	document.getElementById("actualColor").style.background = color;      	
+      	actualColorStyle.style.background = color;      	
       }
       document.getElementById("color").onchange = change;
 
@@ -199,7 +203,7 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
 	    //alert(context.getImageData(x,y,1,1).data) ;
 	    let temp = "rgba("+context.getImageData(x,y,1,1).data+")"
 	    //document.getElementById("status").style.background =temp; 
-	    document.getElementById("actualColor").style.background = temp;
+	    actualColorStyle.style.background = temp;
 	    color = temp;  
 
 	}
