@@ -46,7 +46,8 @@ let y;
 
 canvas = document.getElementById("canvas");
 context = canvas.getContext("2d"); 
-document.getElementById("body").style.cursor = "url('images/pencil.png'), auto"; // According to the task, pencil is initially selected 
+bodyStyle.style.cursor = "url('images/pencil.png'), auto"; // According to the task, pencil is initially selected
+pencilStyle.classList.add("active") 
 	canvas.width = 512; // Set the canvas width
 	canvas.height = 512; // Set the canvas height
 	changeTool();
@@ -59,21 +60,13 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
       		canvas.onmouseup = stopDrawing;
       		canvas.onmouseout = stopDrawing;
       		canvas.onmousemove = draw;
-      		bodyStyle.style.cursor = "url('images/pencil.png'), auto";
-      		pencilStyle.classList.add("active")
-      		eraseStyle.classList.remove("active")
-      		bucketStyle.classList.remove("active") 
-      		pickerToolStyle.classList.remove("active") 
+      		
       	}
+
       	if (currentTool == 2) {                            // for Bucket
       		canvas.onmousedown = fillall;
-      		bodyStyle.style.cursor = "url('images/bucket.png'), auto";
-      		pencilStyle.classList.remove("active")
-      		eraseStyle.classList.remove("active")
-      		pickerToolStyle.classList.remove("active")
-      		bucketStyle.classList.add("active")
-
       	}  
+
       	if (currentTool == 4) {                           // for Color Picker
       		canvas.onmousedown = getColor;
       		canvas.onmouseup = null;
@@ -84,18 +77,28 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
 
       function bucket() { 
       	currentTool = 2;
-      	changeTool();      	
+      	changeTool();
+      	bodyStyle.style.cursor = "url('images/bucket.png'), auto";
+      	pencilStyle.classList.remove("active")
+      	eraseStyle.classList.remove("active")
+      	pickerToolStyle.classList.remove("active")
+      	bucketStyle.classList.add("active")      	
       }
 
       function pencil() {
       	currentTool = 1;
-      	changeTool();      	     	
+      	changeTool();
+      	bodyStyle.style.cursor = "url('images/pencil.png'), auto";
+      	pencilStyle.classList.add("active")
+      	eraseStyle.classList.remove("active")
+      	bucketStyle.classList.remove("active") 
+      	pickerToolStyle.classList.remove("active")       	     	
       }
 
       function eraseIt() {
       	currentTool = 3;
       	changeTool();
-      	document.getElementById("body").style.cursor = "url('images/erase.png'), auto";
+      	bodyStyle.style.cursor = "url('images/erase.png'), auto";
       	pencilStyle.classList.remove("active")
       	eraseStyle.classList.add("active")
       	bucketStyle.classList.remove("active")
@@ -105,7 +108,7 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
       function pickerTool() {
       	currentTool = 4;
       	changeTool(); 
-      	document.getElementById("body").style.cursor = "url('images/eye-dropper.png'), auto";
+      	bodyStyle.style.cursor = "url('images/eye-dropper.png'), auto";
       	pencilStyle.classList.remove("active")
       	eraseStyle.classList.remove("active")
       	bucketStyle.classList.remove("active")
@@ -149,6 +152,10 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
       	context.fillRect(0, 0, canvas.width, canvas.height);
       }
 
+      function setColorToPrev() {
+      	color = prevColor;
+      }
+
       function startDrawing(e) {
       	if (currentTool == 1) context.strokeStyle = color;
       	//context.strokeStyle = color;
@@ -186,8 +193,11 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
       	else if (event.keyCode === 66) {
       		bucket();
       	}
-      	else if (event.keyCode === 67) {
+      	else if (event.keyCode === 73) {
       		document.getElementById("color").click();
+      	}
+      	else if (event.keyCode === 67) {
+      		pickerTool();
       	}
       	else if (event.keyCode === 69) {
       		eraseIt();
