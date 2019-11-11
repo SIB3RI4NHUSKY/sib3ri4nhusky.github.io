@@ -15,7 +15,6 @@ let pickerToolStyle = document.getElementById("pickerTool");   // Indicate activ
 let minSizeStyle = document.getElementById("minSize"); // Indicate active tool
 let medSizeStyle = document.getElementById("medSize"); // Indicate active tool
 let maxSizeStyle = document.getElementById("maxSize"); // Indicate active tool
-
 let actualColorStyle = document.getElementById("actualColor"); // Indicate active tool
 let prevColorStyle = document.getElementById("prev-color"); // Indicate active tool
 
@@ -209,6 +208,7 @@ document.getElementById("body").style.cursor = "url('images/pencil.png'), auto";
 	}
 
 	function load() {
+		context.clearRect(0, 0, canvas.width, canvas.height);
 		let dataURL = localStorage.getItem(canvas);
 		let img = new Image;
 		img.src = dataURL;
