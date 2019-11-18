@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Codejam-Palette</title>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body" >
+	<header class="header" id="header">
+		<div class="container">
+			<div class="top">
+				<div class="menu-title">
+					<img class="menu" src="images/shape-menu.svg">
+					<h1>Lost Angeles - Codejam-Palette</h1>
+				</div>
+				<img class="menu-dot" src="images/shape-dot.svg">
+			</div>
+		</div>
+	</header>
+	<section class="workarea" id="workarea">
+		<div class="container">
+			<div class="interface">				
+				<div class="controls">
+					<div class="tools">
+						<div class="tools-row" id="bucket" onclick="bucket()" >
+							<img class="tools-image" src="images/fill-drip.svg">
+							<div class="tools-name">Paint bucket</div>
+						</div>
+						<div class="tools-row" id="pencil" onclick="pencil()" >
+							<img class="tools-image" src="images/pencil.png">
+							<div class="tools-name">Pencil</div>
+						</div>
+						<div class="tools-row" id="pickerTool" onclick="pickerTool()">
+							<img class="tools-image" src="images/eye-dropper.png">
+							<div class="tools-name">Choose color</div>
+						</div>
+						<div class="tools-row" id="erase"  onclick="eraseIt()">
+							<img class="tools-image" src="images/erase.png">
+							<div class="tools-name">Erase</div>
+						</div>
+						<div class="tools-row">
+							<img class="tools-image" src="images/exchange-alt.svg">
+							<div class="tools-name">Transform</div>
+						</div>
+					</div>
+					<div class="colors">
+						<div class="colors-row current-actual">
+							<div id="actualColor"></div>							
+							<div class="colors-name current-actual">Current color</div>							
+						</div>
+						<div class="colors-row" id="changeColor" onclick="changeColor()">							
+							<input type="color" name="bg" id="color" value="#000000">
+							<div class="colors-name">Change color</div>							
+						</div>						
+						<div class="colors-row" id="setColorToPrev" onclick="setColorToPrev()">
+							<div class="colors-view-green" id="prev-color"></div>
+							<div class="colors-name" >Prev color</div>
+						</div>
+						<div class="colors-row" id="cherryLips" onclick="cherryLips()">
+							<div class="colors-view-first"></div>
+							<div class="colors-name">Cherry Lsips</div>
+						</div>
+						<div class="colors-row" id="coldSiberia" onclick="coldSiberia()">
+							<div class="colors-view-second"></div>
+							<div class="colors-name">Cold Siberia</div>
+						</div>				
+					</div>
+				</div>
+				<div class="canvas-area" >
+					<canvas id="canvas">Please update your Browser</canvas>				
+				</div>
+				<div class="dashboard">
+					<div class="city-view">
+						<input type="text" id="city" name="" placeholder="&#128269 Enter city name" class="city-input">
+						<div id="importImage" onclick="importImage()" class="btn-switcher">Import city image</div>
+						<div id="blackAndWhite" onclick="blackAndWhite()" class="btn-switcher">B&W Filter</div>
+					</div>
+					<div class="view-switcher">
+						<div class="btn-switcher" id="minSize" onclick="changeSize(1)">Small Size</div>
+						<div class="btn-switcher" id="medSize" onclick="changeSize(5)">Medium Size</div>
+						<div class="btn-switcher" id="maxSize" onclick="changeSize(15)">Large Size</div>
+						<div class="btn-switcher" id="loadLS" onclick="load()">Load</div>
+						<div class="btn-switcher" id="saveLS" onclick="save()">Save</div>
+						<div id="redraw" onclick="redraw()" class="btn-switcher">Clear list</div>					
+					</div>					
+				</div>	
+			</div>
+		</div>
+	</section>	
+	<script type="text/javascript" src="dist/bundle.js"></script>	
+</body>
+</html>
