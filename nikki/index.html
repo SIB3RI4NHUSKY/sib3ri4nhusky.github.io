@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lost Angeles</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+	<link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Lost Angeles</h1>
+		</div>
+	</header>
+	<section class="overview">
+		<div class="container">
+			<div class="overview-content">
+				<div class="overview-content-about">
+					<img class="about-photo" src="images/photo.png">
+					<div class="about-name">Nicolas Novoselov</div>
+					<div class="about-social-links">
+						<a href="https://github.com/LostAngeles" title="My Github" target="_blank"><i class="fab fa-github portfolio-gh"></i></a>
+						<a href="https://www.facebook.com/novnicolas" title="My Facebook" target="_blank"><i class="fab fa-facebook portfolio-fb"></i></a>
+						<a href="https://wa.me/89065296658" title="My WhatsApp" target="_blank"><i class="fab fa-whatsapp portfolio-wa"></i></a>
+						<a href="github.com/LostAngeles" target="_blank"><i class="fab fa-linkedin-in portfolio-ln"></i></a>					
+					</div>
+					<a class="contacts" href="mailto:novnicolas@gmail.com" title="Mail me at novnicolas@gmail.com" target="_blank">novnicolas@gmail.com</a>
+					<a class="contacts" href="tel:8-906-529-6658" title="Call me" target="_blank">+7 (906) 529 66 58</a>
+					<a href=""></a>
+				</div>
+				<div class="overview-content-media">
+					<details class="about-education">
+						<summary class="about-education-summary">My Education</summary>
+						<div class="education">
+							<div class="education__title">Pereslavl State University (2015)</div>
+							<div class="education__details">Higher education. Computer science.</div>
+							<div class="education__spec">Specialist</div>
+						</div>
+						<div class="education">
+							<div class="education__title">Military Driving School (2016)</div>
+							<div class="education__details">Military Driving</div>
+							<div class="education__spec">Driver of military vehicles</div>
+						</div>
+						<div class="education">
+							<div class="education__title">Yaroslavl State University (2018)</div>
+							<div class="education__details">Psychological sciences (Higher education. Postgraduate studies)</div>
+							<div class="education__spec">Teacher, researcher</div>
+						</div>
+						<div class="education">
+							<div class="education__title">RSSchool Courses (2020)</div>
+							<div class="education__details">Frontend</div>
+							<div class="education__spec">Junior Frontend Developer</div>
+						</div>
+					</details>
+
+					<div class="projects">
+						<div class="projects-title">Projects</div>
+						<div class="swiper-container">					
+							<div class="swiper-wrapper">						
+								<div class="swiper-slide sflex">
+									<div class="project-text">
+										<div class="project-title">Theyalow</div>
+										<ul class="project-feautures">
+											<li>Mobile Compatibility</li>
+											<li>Well-Formatted Content</li>
+											<li>Fast Load Times</li>
+											<li>Video support</li>
+											<li>Designed with Photoshop</li>
+										</ul>
+										<div class="click-to-see">Click to see the project ➥ </div>
+									</div>							
+									<a href="theyalow/index.html" target="_blank"><img class="project-photo" src="images/theyalow.jpg"></a>
+								</div>
+								<div class="swiper-slide sflex">
+									<div class="project-text">
+										<div class="project-title">Repair Design Project</div>
+										<ul class="project-feautures">
+											<li>Mobile Compatibility</li>
+											<li>Well-Formatted Content</li>
+											<li>Fast Load Times</li>
+											<li>Slider/Swiper Support</li>
+											<li>Designed with Figma</li>
+										</ul>
+										<div class="click-to-see">Click to see the project ➥ </div>
+									</div>							
+									<a href="repair/index.html" target="_blank"><img class="project-photo" src="images/repair-design.jpg"></a>
+								</div> 						    
+							</div>					
+							<div class="swiper-button-prev swicus"></div>
+							<div class="swiper-button-next swicus"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+    		// Optional parameters
+    		direction: 'horizontal',
+    		loop: true,    
+    		// Navigation arrows
+    		navigation: {
+    			nextEl: '.swiper-button-next',
+    			prevEl: '.swiper-button-prev',
+    		},    
+    	})
+    </script>
+
+</body>
+</html>

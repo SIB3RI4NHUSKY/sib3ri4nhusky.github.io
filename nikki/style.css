@@ -1,0 +1,297 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {	
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+	background: url(images/body-back.jpg) no-repeat center top / cover;
+	
+	color: #3498DB;	 
+}
+
+h1 {	
+	font-size: 25px;
+	
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+	border-radius: 2px;
+	padding-bottom: 6px;
+}
+
+.container {
+	max-width: 1120px;
+	width: 100%;
+	margin: 0px auto;	
+}
+
+.overview-content {
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+}
+
+.overview-content-about {
+	width: 35%;
+	padding-top: 30px;
+	padding-right: 35px;
+	text-align: right;
+	font-size: 30px;	
+}
+
+.about-photo {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.about-name {
+	padding-top: 5px;
+}
+
+.about-social-links {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 0px 10px 0px;
+}
+
+.about-social-links a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.portfolio-gh {
+	color: #AED6F1;
+	transition: 0.6s
+}
+
+.portfolio-fb {
+	color: #5DADE2;
+	transition: 0.6s
+}
+
+.portfolio-wa {
+	color: #ABEBC6;
+	transition: 0.6s
+}
+
+.portfolio-ln {
+	color: #F5B7B1;
+	transition: 0.6s
+}
+
+.portfolio-gh:hover {
+	color: #0074D9;
+}
+
+.portfolio-fb:hover {
+	color: #2471A3;
+}
+
+.portfolio-wa:hover {
+	color: #28B463;
+}
+
+.portfolio-ln:hover {
+	color: #E74C3C;
+}
+
+.contacts {
+	font-size: 24px;
+	padding-bottom: 5px;
+	transition: 0.5s;
+}
+
+.contacts:hover {	
+	color: #FCF3CF;
+}
+
+.overview-content-media {	
+	width: 65%;
+	border-left: 1px solid #7B7D7D; /* #CACFD2; */
+	padding-left: 20px;
+	font-size: 20px
+}
+
+.about-education-summary {
+	margin-bottom: 13px;
+	outline: none;
+}
+
+.education {
+	margin-bottom: 13px;
+}
+
+.education__title {
+	font-weight: bold;
+}
+
+.education__details {
+	padding-left: 20px;
+}
+
+.education__spec {
+	padding-left: 20px;
+}
+
+.projects-title {
+	font-size: 30px;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+.click-to-see {		
+	margin-top: 30px;
+	margin-right: 15px;
+	transition: 0.5s;
+}
+
+.click-to-see:hover {	
+	font-size: 22px;	
+}
+
+.project-feautures {
+
+	padding-right: 30px
+}
+
+.project-photo {
+	-webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+	border-radius: 2%;
+}
+
+details[open] summary ~ * {
+	animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+	0%    {opacity: 0; margin-left: -10px}
+	100%  {opacity: 1; margin-left: 0px}
+}
+
+
+/* slider */
+
+.swiper-container {
+	width: 750px;
+}
+
+.sflex {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.swicus {
+	color: #5DADE2;
+	transition: 0.5s;  
+}
+
+.swicus:hover {
+	color: #FCF3CF;	
+}
+
+@media screen and (max-width: 1165px) {
+	.container {
+		max-width: 1165px;
+		width: 100%;
+		margin: 0px auto;	
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.overview-content {
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		display: flex;		
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.overview-content-about {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.about-social-links {
+		justify-content: center;
+	}
+
+	.overview-content-media {
+		width: 100%;
+		height: auto;
+		padding: 20px 0 0 0;
+		margin: 0;		
+	}	
+
+	.about-education {
+		text-align: center;
+	}
+
+	.swiper-container {
+		width: 100%;
+	}
+
+	.about-photo {
+		margin-top: 20px;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+	}
+}
+
+@media screen and (max-width: 755px) {
+	.container {
+		max-width: 755px;
+		width: 100%;
+		margin: 0px auto;	
+	}
+
+	.about-name {
+		font-size: 20px;
+	}
+
+	.about-social-links {
+		font-size: 20px;
+	}
+
+	.contacts {
+		font-size: 15px;
+	}
+
+	.overview-content-media {
+		font-size: 15px;
+	}
+
+	.project-text {
+		display: none;
+	}
+
+	.projects-title {
+		font-size: 20px;		
+	}
+
+	.swicus {
+		display: none;
+	}
+}
