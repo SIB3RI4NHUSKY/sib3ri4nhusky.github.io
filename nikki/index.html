@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-	<link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/images/fav.png"/>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 	<link rel="stylesheet" type="text/css" href="style.css">	
 </head>
@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="overview-content">
 				<div class="overview-content-about">
-					<img class="about-photo" src="images/photo.png">
+					<img class="about-photo" src="assets/images/photo.png">
 					<div class="about-name">Nicolas Novoselov</div>
 					<div class="about-social-links">
 						<a href="https://github.com/LostAngeles" title="My Github" target="_blank"><i class="fab fa-github portfolio-gh"></i></a>
@@ -36,46 +36,43 @@
 				<div class="overview-content-media">
 					<details class="about-education">
 						<summary class="about-education-summary">My Education</summary>
-						<div class="education">
-							<div class="education__title">Pereslavl State University (2015)</div>
-							<div class="education__details">Higher education. Computer science.</div>
-							<div class="education__spec">Specialist</div>
-						</div>
-						<div class="education">
-							<div class="education__title">Military Driving School (2016)</div>
-							<div class="education__details">Military Driving</div>
-							<div class="education__spec">Driver of military vehicles</div>
-						</div>
-						<div class="education">
-							<div class="education__title">Yaroslavl State University (2018)</div>
-							<div class="education__details">Psychological sciences (Higher education. Postgraduate studies)</div>
-							<div class="education__spec">Teacher, researcher</div>
-						</div>
-						<div class="education">
-							<div class="education__title">RSSchool Courses (2020)</div>
-							<div class="education__details">Frontend</div>
-							<div class="education__spec">Junior Frontend Developer</div>
-						</div>
+
+						<ul>
+							<li>
+								<div class="education">
+									<div class="education__title">Pereslavl State University (2015)</div>
+									<div class="education__details">Higher education. Computer science.</div>
+									<div class="education__spec">Specialist</div>
+								</div>
+							</li>
+							<li>
+								<div class="education">
+									<div class="education__title">Military Driving School (2016)</div>
+									<div class="education__details">Military Driving</div>
+									<div class="education__spec">Driver of military vehicles</div>
+								</div>
+							</li>
+							<li>
+								<div class="education">
+									<div class="education__title">Yaroslavl State University (2018)</div>
+									<div class="education__details">Psychological sciences (Higher education. Postgraduate studies)</div>
+									<div class="education__spec">Teacher, researcher</div>
+								</div>
+							</li>
+							<li>
+								<div class="education">
+									<div class="education__title">RSSchool Courses (2020)</div>
+									<div class="education__details">Frontend</div>
+									<div class="education__spec">Junior Frontend Developer</div>
+								</div>
+							</li>
+						</ul>					
 					</details>
 
 					<div class="projects">
 						<div class="projects-title">Projects</div>
 						<div class="swiper-container">					
-							<div class="swiper-wrapper">						
-								<div class="swiper-slide sflex">
-									<div class="project-text">
-										<div class="project-title">Theyalow</div>
-										<ul class="project-feautures">
-											<li>Mobile Compatibility</li>
-											<li>Well-Formatted Content</li>
-											<li>Fast Load Times</li>
-											<li>Video support</li>
-											<li>Designed with Photoshop</li>
-										</ul>
-										<div class="click-to-see">Click to see the project ➥ </div>
-									</div>							
-									<a href="theyalow/index.html" target="_blank"><img class="project-photo" src="images/theyalow.jpg"></a>
-								</div>
+							<div class="swiper-wrapper">								
 								<div class="swiper-slide sflex">
 									<div class="project-text">
 										<div class="project-title">Repair Design Project</div>
@@ -86,9 +83,23 @@
 											<li>Slider/Swiper Support</li>
 											<li>Designed with Figma</li>
 										</ul>
-										<div class="click-to-see">Click to see the project ➥ </div>
+										<div class="click-to-see">Click to see ➥ </div>
 									</div>							
-									<a href="repair/index.html" target="_blank"><img class="project-photo" src="images/repair-design.jpg"></a>
+									<a href="projects/repair-design-project/index.html"><img class="project-photo" src="assets/images/repair-design.jpg"></a>
+								</div>
+								<div class="swiper-slide sflex">
+									<div class="project-text">
+										<div class="project-title">Theyalow</div>
+										<ul class="project-feautures">
+											<li>Mobile Compatibility</li>
+											<li>Well-Formatted Content</li>
+											<li>Fast Load Times</li>
+											<li>Video support</li>
+											<li>Designed with Photoshop</li>
+										</ul>
+										<div class="click-to-see">Click to see ➥ </div>
+									</div>							
+									<a href="projects/theyalow/index.html">><img class="project-photo" src="assets/images/theyalow.jpg"></a>
 								</div> 						    
 							</div>					
 							<div class="swiper-button-prev swicus"></div>
