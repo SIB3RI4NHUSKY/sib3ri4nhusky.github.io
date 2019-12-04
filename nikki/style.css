@@ -6,14 +6,17 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Roboto', sans-serif;
-	background: url(images/body-back.jpg) no-repeat center top / cover;
-	
-	color: #3498DB;	 
+	background: url(assets/images/body-back.jpg) no-repeat center top / cover;	
+	color:  #aed6f1; 
 }
 
 h1 {	
 	font-size: 25px;
-	
+	transition: 0.5s;	
+}
+
+h1:hover {	
+	color: #FCF3CF;
 }
 
 a {
@@ -58,7 +61,7 @@ header {
 }
 
 .about-name {
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 .about-social-links {
@@ -68,8 +71,8 @@ header {
 }
 
 .about-social-links a {
-	margin-left: 5px;
-	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .portfolio-gh {
@@ -110,7 +113,7 @@ header {
 
 .contacts {
 	font-size: 24px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	transition: 0.5s;
 }
 
@@ -120,13 +123,13 @@ header {
 
 .overview-content-media {	
 	width: 65%;
-	border-left: 1px solid #7B7D7D; /* #CACFD2; */
+	border-left: 1px solid #7B7D7D; 
 	padding-left: 20px;
 	font-size: 20px
 }
 
 .about-education-summary {
-	margin-bottom: 13px;
+	padding-bottom: 10px;
 	outline: none;
 }
 
@@ -135,7 +138,7 @@ header {
 }
 
 .education__title {
-	font-weight: bold;
+	font-weight: bold;	
 }
 
 .education__details {
@@ -149,12 +152,12 @@ header {
 .projects-title {
 	font-size: 30px;
 	margin-bottom: 50px;
-	text-align: center;	
+	text-align: center;		
 }
 
 .click-to-see {		
 	margin-top: 30px;
-	margin-right: 15px;
+	text-align: center;	
 	transition: 0.5s;
 }
 
@@ -162,9 +165,12 @@ header {
 	font-size: 22px;	
 }
 
-.project-feautures {
+.project-title {
+	padding-left: 22px;	
+}
 
-	padding-right: 30px
+.project-feautures {
+	padding-right: 30px;		
 }
 
 .project-photo {
@@ -183,7 +189,6 @@ details[open] summary ~ * {
 	100%  {opacity: 1; margin-left: 0px}
 }
 
-
 /* slider */
 
 .swiper-container {
@@ -192,8 +197,7 @@ details[open] summary ~ * {
 
 .sflex {
 	display: flex;
-	justify-content: center;
-	
+	justify-content: center;	
 }
 
 .swicus {
@@ -272,7 +276,12 @@ details[open] summary ~ * {
 	}
 
 	.about-social-links {
-		font-size: 20px;
+		font-size: 35px;
+		padding: 10px 0px 10px 0px;
+	}
+
+	.about-social-links a {
+		padding: 0px 15px 0px 15px;
 	}
 
 	.contacts {
@@ -280,6 +289,7 @@ details[open] summary ~ * {
 	}
 
 	.overview-content-media {
+		padding-top: 0px;
 		font-size: 15px;
 	}
 
