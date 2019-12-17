@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+} 
+
+body {
+  background: url(assets/original-wallpaper.jpg) no-repeat center top / cover;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.topbar {
+  padding: 5px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 0px;
+  height: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: width 1.7s;
+  background-color: rgba(75, 68, 83, .9);
+}
+
+.logo {
+  padding-left: 25px;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 2.5s;  
+}
+
+.settings-button {
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  line-height: 20px;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 3.0s;  
+}
+
+.settings-button i {
+  padding-left: 15px;
+  padding-right: 25px;
+}
+
+.settings-expand {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 0px;
+  margin-top: 10px;
+  transition: 1s;
+  line-height: 20px;
+  background-color: rgba(75, 68, 83, .9);
+  display: flex;
+  justify-content: space-around;
+}
+
+.change {
+  display: flex;	
+}
+
+.setting-description {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.active {
+  transition: color 1s;
+  transition: border 1s;
+}
+
+.active:hover {
+  color: #EC7063;
+}
+
+.active:active {
+  margin-top: 2px;
+  margin-left: 2px;
+  padding-right: 8px;
+}
+
+.weather-content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-forecast-side {
+  width: 50%;
+  height: 0px;
+  border-radius: 4px;
+  transition: 1.7s;
+  background-color: rgba(75, 68, 83, .7);
+}
+
+.weather-details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-info {
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 10.5s;
+}
+
+#today-icon {
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 10.5s;
+}
+
+#temperature-section,
+#summary-section {
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 9s;
+}
+
+.weather-forecast-side:hover {
+  background-color: rgba(75, 68, 83, .9);
+}
+
+#summary-section {
+  text-align: center;
+}
+
+#temperature-section {
+  font-size: 70px;
+}
+
+.three-days {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 10.5s;
+}
+
+.first-day-average-temp,
+.second-day-average-temp,
+.third-day-average-temp {
+  padding: 10px 0px 10px 0px;
+  font-size: 50px;
+}
+
+.geolocation-side {
+  width: 50%;
+  height: 0px;
+  border-radius: 4px;
+  transition: 1.7s;
+  background-color: rgba(75, 68, 83, .7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.geolocation-side:hover {
+  background-color: rgba(75, 68, 83, .9);  
+}
+
+.title {
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 8.5s;
+}
+
+#search-form-box {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(75, 68, 83, 1); 
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 8.8s;
+}
+
+.search-form-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form-button i {
+  color: #ffffff;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 8.8s;
+}
+
+#search-form-box::placeholder {
+  color: #ffffff;
+}
+
+.coords {
+  padding-top: 20px;
+  display: flex;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 9s;
+}
+
+#latitude-section {
+  padding-right: 10px;
+}
+
+#map {
+  margin-top: 20px;
+  width: 90%;
+  height: 70%;
+  opacity: 0;
+  animation: show 3s 1; 
+  animation-fill-mode: forwards; 
+  animation-delay: 9.5s;
+  transition: opacity 1s;
+}
+
+@keyframes show {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
