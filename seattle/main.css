@@ -102,6 +102,7 @@ a {
 
 .weather-content {
   padding-top: 30px;
+  transition: 1s;
   display: flex;
   justify-content: space-around;
 }
@@ -240,7 +241,7 @@ a {
   padding-right: 10px;
 }
 
-#map {
+.map {
   margin-top: 20px;
   width: 90%;
   height: 70%;
@@ -259,6 +260,93 @@ a {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    max-width: 770px;
+    width: 100%;
+    margin: 0px auto; 
+  }
+  .settings-expand {
+    font-size: 17px;    
+    border-radius: 5px;    
+    margin-top: 10px;    
+    line-height: 17px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container {
+    max-width: 660px;
+    width: 100%;
+    margin: 0px auto; 
+  }
+  .weather-content {
+    width: 100%;
+    padding: 30px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  .weather-forecast-side {
+    width: 100% !important;  
+
+    border-radius: 4px;
+    transition: 1.7s;
+    background-color: rgba(75, 68, 83, .7);
+  }
+  .geolocation-side {
+    width: 100% !important;
+
+    border-radius: 4px;
+    transition: 1.7s;
+    background-color: rgba(75, 68, 83, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map {
+    margin-top: 20px;
+    width: 90%;
+    height: 70%;    
+  }
+  .change i {
+    display: none;
+  }
+
+  .settings-expand {    
+    font-size: 15px;    
+    border-radius: 5px;    
+    margin-top: 10px;    
+    line-height: 15px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    max-width: 390px;
+    width: 100%;
+    margin: 0px auto; 
+  }
+  canvas {
+    width: 96px;
+    height: 96px;
+  }
+  body {
+    font-size: 15px;
+  }
+  .first-day-average-temp,
+  .second-day-average-temp,
+  .third-day-average-temp {
+    font-size: 30px;
   }
 }
 
