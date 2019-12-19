@@ -16,8 +16,8 @@
 			<div class="topbar" id="topbar">
 				<div class="logo"><a href="index.html"><h1>Daily Weather</h1></a></div>
 				<div class="settings-button" id="settings-button"  onclick="openSettings()">
-					<div id="settings-button-text">Settings</div>
-					<i class="fas fa-ellipsis-v"></i>
+					<div class="settings-button-text" id="settings-button-text">Settings</div>
+					<i class="fas fa-ellipsis-v settings-icon"></i>
 				</div>
 			</div>
 			<div class="settings-expand" id="settings-expand">
@@ -81,13 +81,13 @@
 				</div>				
 				<div class="geolocation-side" id="geolocation-side">
 					<div class="title" id="titleGeo">Geolocation</div>
-					<form class="example" id="search-form" action="#" onsubmit="">
-						<input type="search" placeholder="Start searching..." id="search-form-box">
-						<button class="search-form-button" type="submit" id="search-form-button"><i class="fas fa-search-location"></i></button>
+					<form class="search-form" id="search-form" onsubmit="">
+						<input class="search-form-box" type="search" placeholder="Start searching..." id="search-form-box">
+						<button class="search-form-button" type="submit" id="search-form-button"><i class="fas fa-search-location city-search-icon" id="city-search-icon"></i></button>
 					</form>					
 					<div class="coords">
-						<div id="latitude-section"></div>
-						<div id="longitude-section"></div>
+						<div class="latitude-section" id="latitude-section"></div>
+						<div class="longitude-section" id="longitude-section"></div>
 					</div>
 					<div id="map" class="map"></div>					
 				</div>
