@@ -11,5 +11,5 @@
   ],
   "name": "Bread timer",
   "short_name": "Bread",
-  "start_url": "/timerApp/index.html"
+  "start_url": "index.html"
 }
