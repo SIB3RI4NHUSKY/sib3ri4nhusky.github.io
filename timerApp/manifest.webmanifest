@@ -1,15 +1,15 @@
 {
-  "background_color": "purple",
-  "description": "Bread timer",
+  "background_color": "brown",
+  "description": "Время для хлеба",
   "display": "fullscreen",
   "icons": [
     {
       "src": "images/favicon.png",
-      "sizes": "192x192",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
-  "name": "Bread timer",
+  "name": "Время для хлеба",
   "short_name": "Bread",
   "start_url": "index.html"
 }
