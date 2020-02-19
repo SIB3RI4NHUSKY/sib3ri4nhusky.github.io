@@ -39,9 +39,8 @@ animation: animate 60s linear infinite;
 
 .bread {
 	font-size: 180px;
-	padding: 0px 14px 0px 14px;
+	padding: 0px 14px 14px 14px;
 	line-height: 180px;
-	border: 1px solid #29B6F6;
 	color: #29B6F6;
 	border-radius: 50%;
 }
