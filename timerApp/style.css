@@ -4,7 +4,8 @@
 } 
 
 body {	
-	background: url(images/back.jpg) no-repeat center top / cover;	
+	background: url(images/back.jpg) no-repeat center top / cover;
+	height: 100vh;	
 }
 
 a {
