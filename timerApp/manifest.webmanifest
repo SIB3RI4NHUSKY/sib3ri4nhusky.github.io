@@ -10,6 +10,6 @@
     }
   ],
   "name": "Bread timer",
-  "short_name": "Bread 
-  "start_url": "index.html"
+  "short_name": "Bread",
+  "start_url": "/timerApp/index.html"
 }
