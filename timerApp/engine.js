@@ -5,8 +5,8 @@ function refresh() {
 // Set the date we're counting down to
 var tomorrow = new Date();
 tomorrow.setDate(new Date().getDate()+1);
-tomorrow.setHours(6);
-tomorrow.setMinutes(0);
+tomorrow.setHours(5);
+tomorrow.setMinutes(15);
 tomorrow.setMilliseconds(0);
 
 // Update the count down every 1 second
