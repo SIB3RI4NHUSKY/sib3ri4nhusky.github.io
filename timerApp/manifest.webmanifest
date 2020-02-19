@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Bread timer",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Bread timer",
+  "short_name": "Bread 
+  "start_url": "index.html"
+}

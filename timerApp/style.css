@@ -1,0 +1,57 @@
+* {
+	margin: 0px;
+	padding: 0px;
+} 
+
+body {	
+	background: url(images/back.jpg) no-repeat center top / cover;	
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.interface {
+	padding: 50px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.usual {
+	min-width: 221px;
+	display: none;
+}
+
+.bread, .time {
+	background-color: rgba(245, 245, 245, 0.4);
+	color: #4A148C;
+	padding: 10px 10px 10px 10px;
+	width: 100%;	
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.france {
+	margin: 20px 0px 20px 0px;
+}
+
+.husky {	
+	margin-top: 10px;
+	display: flex;	
+	border-radius: 35px;
+	width: 200px;
+}
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
