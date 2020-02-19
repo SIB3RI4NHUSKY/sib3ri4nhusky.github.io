@@ -26,7 +26,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("time").innerHTML = hours + ":"
-  + minutes + ":" + seconds + "";
+  + minutes;
 
   // If the count down is finished, write some text
   if (distance < 0) {
