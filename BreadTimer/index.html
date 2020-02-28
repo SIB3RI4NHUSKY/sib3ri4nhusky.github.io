@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kitchen timer app</title>
+	<link rel="shortcut icon" type="image/png" href="icon/icon.png"/>
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="recipes">
+		<div class="the-recipes" id="the-recipes">
+			<div class="recipes-title">Обычный хлеб</div>
+			<div class="recipes-sub-title">Выберите 01 или 03</div>
+			<table>
+   				<tbody>
+        			<tr>
+           				<td class="rmve-brdr-lft rmve-brdr-top">&nbsp;</td>
+           				<td class="rmve-brdr-top">M</td>
+            			<td class="rmve-brdr-top">L</td>
+            			<td class="rmve-brdr-top rmve-brdr-rght">XL</td>
+        			</tr>
+        			<tr>
+           				<td class="rmve-brdr-lft">Дрожжи -B</td>
+            			<td>1 ч.л.</td>
+            			<td>1&frac12; ч.л.</td>
+            			<td class="rmve-brdr-rght">2 ч.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Дрожжи -R</td>
+            			<td>2 ч.л.</td>
+            			<td>2&frac12; ч.л.</td>
+            			<td class="rmve-brdr-rght">3 ч.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Пшен. мука</td>
+            			<td>400 г</td>
+            			<td>500 г</td>
+            			<td class="rmve-brdr-rght">600 г</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Соль</td>
+            			<td>1 ч.л.</td>
+            			<td>1.5 ч.л.</td>
+            			<td class="rmve-brdr-rght">2 ч.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Сахар</td>
+            			<td>1 с.л.</td>
+            			<td>1.5 с.л.</td>
+            			<td class="rmve-brdr-rght">2 с.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Раст. масло</td>
+            			<td>1 с.л.</td>
+            			<td>1.5 с.л.</td>
+            			<td class="rmve-brdr-rght">2 с.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft rmve-brdr-btm">Вода</td>
+            			<td class="rmve-brdr-btm">260 мл</td>
+            			<td class="rmve-brdr-btm">330 мл</td>
+            			<td class="rmve-brdr-btm rmve-brdr-rght">370 мл</td>
+        			</tr>
+    			</tbody>
+			</table>
+			<div class="back-recipes" id="get-back-to-main" onclick="getBackToMain()">back</div>
+		</div>		
+		<div class="black" id="black">
+			<div class="black-top" id="black-top"></div>
+			<div class="app-background" id="app-background">
+				<div class="app-run-and-clouds" id="app-run-and-clouds">
+					<div class="time" id="time">Hello!</div>
+					<div class="manually-set-time-div" id="manually-set-time-div">
+						<div class="manually-set-time" id="manually-set-time">set</div>
+					</div>
+					<div class="time-modal">
+						<div class="refresh" id="refresh" onclick="refresh()">⟳</div>
+						<div class="change-modal" id="change-modal">
+							<div class="label">
+								<div class="hours-label">HS</div>
+								<div class="minutes-label">MS</div>
+							</div>
+							<!--<label for="settingHours">Set hours:</label>-->
+							<select id="settingHours">
+								<option value="0">00</option> 
+  								<option value="1">01</option>
+  								<option value="2">02</option>
+  								<option value="3">03</option>
+  								<option value="4">04</option>
+  								<option value="5">05</option>
+  								<option value="6">06</option>
+  								<option value="7">07</option>
+  								<option value="8">08</option>
+  								<option value="9">09</option>
+  								<option value="10">10</option>
+  								<option value="1">11</option>
+  								<option value="12">12</option>
+  								<option value="13">13</option>
+  								<option value="14">14</option>
+  								<option value="15">15</option>
+  								<option value="16">16</option>
+  								<option value="17">17</option>
+  								<option value="18">18</option>
+  								<option value="19">19</option>
+  								<option value="20">20</option>
+  								<option value="21">21</option>
+  								<option value="22">22</option>
+  								<option value="23">23</option>					 								
+							</select>
+							<!--<label for="settingMinutes">Set minutes:</label>-->
+
+							<select id="settingMinutes">
+  								<option value="0">00</option>
+  								<option value="5">05</option>
+  								<option value="10">10</option>
+  								<option value="15">15</option>
+  								<option value="20">20</option>
+  								<option value="25">25</option>
+  								<option value="30">30</option>
+  								<option value="35">35</option>
+  								<option value="40">40</option>
+  								<option value="45">45</option>
+  								<option value="50">50</option>
+  								<option value="55">55</option>  								
+							</select>
+							<!-- <div class="saveAndClose">
+								<div class="saveAddTime" id="saveAddTime">save</div>
+								<div class="closeAddTime" id="closeAddTime">back</div>
+							</div> -->
+						</div>						
+					</div>
+					<div class="control" id="control">
+						<div class="more" id="more">
+							<div class="more-left" id="more-left">
+								<div class="more-left-text" id="more-left-text" onclick="initialMore()">mo</div>
+								<div class="show-recipes" id="show-recipes">
+									<div class="recipes-btn" id="recipes-btn" onclick="getRecipes()">recipes</div>
+									<div onclick="saveAddTime()">save</div>
+								</div>
+							</div>
+							<div class="more-right" id="more-right">
+								<div class="more-right-text" id="more-right-text" onclick="initialMore()">re</div>
+								<div class="set-time" id="set-time">
+									<div class="setTime-btn" id="setTime-btn" onclick="setTime()">set time</div>
+									<div onclick="closeAddTime()">back</div>
+								</div>	
+							</div>		
+						</div>
+					</div>
+					<div class="test">
+						test
+					</div>
+				</div>
+			</div>
+			<div class="black-bottom" id="black-bottom"></div>	
+		</div>			
+	</div>
+<button class="add-button">Add to home screen</button>
+<script type="text/javascript" src="bread.js"></script>
+<script type="text/javascript" src="time.js"></script>
+<script type="text/javascript" src="installpwa.js"></script>
+</body>
+</html>
