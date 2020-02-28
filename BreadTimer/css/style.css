@@ -4,12 +4,12 @@
 }
 
 body {
-	background: lightgreen;
+	background: transparent;
 	color: #3498DB;
 }
 
 .recipes {
-	background-color: #81C784;
+	background-color: transparent;
 	background: url(../images/bread.jpg) no-repeat center top / cover;
 	width: 100vw;
 	height: 100vh;
