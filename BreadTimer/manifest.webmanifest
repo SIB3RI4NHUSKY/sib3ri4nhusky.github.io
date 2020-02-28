@@ -11,5 +11,5 @@
   ],
   "name": "Kitchen timer app",
   "short_name": "Kitchen timer",
-  "start_url": "BreadTimer/index.html"
+  "start_url": "index.html"
 }
