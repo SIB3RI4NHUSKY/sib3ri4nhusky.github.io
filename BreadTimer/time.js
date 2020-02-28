@@ -81,6 +81,7 @@ function saveAddTime() {
 	manuallySetHours = document.getElementById("settingHours").options[document.getElementById("settingHours").selectedIndex].text;
 	manuallySetMinutes = document.getElementById("settingMinutes").options[document.getElementById("settingMinutes").selectedIndex].text;
 	
+	clearInterval(manuallyInterval);
 	var tomorrow = new Date();
     tomorrow.setDate(new Date().getDate() + 1);
     tomorrow.setHours(manuallySetHours);
