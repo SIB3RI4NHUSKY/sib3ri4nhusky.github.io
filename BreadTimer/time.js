@@ -14,12 +14,16 @@ function refresh() {
 		document.getElementById('refresh').style.transform = "rotate(0deg)";
 	}
 	document.getElementById("time").style.width = "0px"; 
+	document.getElementById("time").style.paddingLeft = "0px";
+	document.getElementById("time").style.paddingRight = "0px";
 	document.getElementById("manually-set-time").style.height = "0px";
 	clearInterval(theInterval);
 	clearInterval(manuallyInterval);
 	calculateTime()
 	setTimeout(function () {
 		document.getElementById("time").style.width = "240px";
+		document.getElementById("time").style.paddingLeft = "10px";
+		document.getElementById("time").style.paddingRight = "10px";
 	}, 1000)
 	if (initialMoreMode) {
 		initialMore();
