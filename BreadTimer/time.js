@@ -19,7 +19,7 @@ function refresh() {
 	clearInterval(manuallyInterval);
 	calculateTime()
 	setTimeout(function () {
-		document.getElementById("time").style.width = "220px";
+		document.getElementById("time").style.width = "240px";
 	}, 1000)
 	if (initialMoreMode) {
 		initialMore();
