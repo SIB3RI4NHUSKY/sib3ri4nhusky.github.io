@@ -13,7 +13,7 @@ function refresh() {
 	if (!isRefreshed) {
 		document.getElementById('refresh').style.transform = "rotate(0deg)";
 	}
-	document.getElementById("time").style.width = "0px"; 
+	
 	document.getElementById("manually-set-time").style.height = "0px";
 	clearInterval(theInterval);
 	clearInterval(manuallyInterval);
@@ -27,6 +27,7 @@ function refresh() {
 }
 
 function calculateTime() {
+	document.getElementById("time").style.width = "0px"; 
     var tomorrow = new Date();
     tomorrow.setDate(new Date().getDate() + 1);
     tomorrow.setHours(6);
