@@ -10,7 +10,7 @@ body {
 
 .recipes {
 	background-color: transparent;
-	background: url(../images/bread.jpg) no-repeat center top / cover;
+	background: url(../images/bread-2.jpg) no-repeat center top / cover;
 	width: 100vw;
 	height: 100vh;
 }
@@ -278,19 +278,41 @@ select {
 	opacity: 0;
 }
 
-table {
-	text-align: center;
-  border-collapse: collapse;
-  background-color: rgba(20, 18, 18, 0.9);
-	-webkit-box-shadow: 1px 6px 13px 2px rgba(0,0,0,0.75);
+.table-div {
+	margin-top: 40px;		
+	overflow: hidden;	
+	height: 278px;
+	border-radius: 5px;			
+}
+
+.egg-bread-table, .france-bread-table {	
+	height: 278px;
+	transition: 0.4s;
+	overflow: hidden;
+	/*-webkit-box-shadow: 1px 6px 13px 2px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 6px 13px 2px rgba(0,0,0,0.75);
-	box-shadow: 1px 6px 13px 2px rgba(0,0,0,0.75);
-	border-radius: 5px;
+	box-shadow: 1px 6px 13px 2px rgba(0,0,0,0.75); */
+	border-radius: 5px;		
+}
+
+.usual-bread-table {
+	height: 278px;
+	transition: 0.4s;
+	overflow: hidden;
+	border-radius: 5px;		
+}
+
+table {	
+	width: 100%;
+	margin: auto auto;
+	text-align: center;
+	border-radius: 5px;	
+ 	border-collapse: collapse;  
+ 	background-color: rgba(20, 18, 18, 0.9);	
 }
 
 th, td {
-  border: 1px solid #607D8B;
-
+  	border: 1px solid #607D8B;
 }
 
 td {
@@ -300,15 +322,33 @@ td {
 .recipes-title {
 	padding-top: 25px;
 	font-size: 30px;
+	height: 35px;
+	overflow: hidden;
+	text-align: center;	
+}
+
+.usual-bread, .egg-bread, .france-bread {
+	height: 35px;
+	transition: 0.4s;
+	overflow: hidden;
 }
 
 .recipes-sub-title {
 	font-size: 20px;
 	margin: 15px 0px 20px 0px;
+	height: 23px;
+	overflow: hidden;
+	text-align: center;	
+}
+
+.usual-bread-menu, .egg-bread-menu, .france-bread-menu {
+	height: 23px;
+	transition: 0.4s;
+	overflow: hidden;
 }
 
 .back-recipes {
-	margin-top: 150px;
+	margin-top: 110px;
 	margin-bottom: 15px;
 	padding: 10px 30px;
 	font-size: 30px;
