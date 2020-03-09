@@ -11,9 +11,19 @@
 <body>
 	<div class="recipes">
 		<div class="the-recipes" id="the-recipes">
-			<div class="recipes-title">Обычный хлеб</div>
-			<div class="recipes-sub-title">Выберите 01 или 03</div>
-			<table>
+			<div class="recipes-title">
+				<div class="usual-bread" id="usual-bread">Обычный хлеб</div>
+				<div class="egg-bread" id="egg-bread">Яичный хлеб</div>
+				<div class="france-bread" id="france-bread">Французский хлеб</div>
+			</div>
+			<div class="recipes-sub-title">
+				<div class="usual-bread-menu" id="usual-bread-menu">Выберите 01 или 03</div>
+				<div class="egg-bread-menu" id="egg-bread-menu">Выберите меню '01'</div>
+				<div class="france-bread-menu" id="france-bread-menu">Выберите меню '10' (SD-2510: '09')</div>
+			</div>
+			<div class="table-div" onclick="recipesSwitch()">
+				<div class="usual-bread-table" id="usual-bread-table">
+					<table >
    				<tbody>
         			<tr>
            				<td class="rmve-brdr-lft rmve-brdr-top">&nbsp;</td>
@@ -65,6 +75,102 @@
         			</tr>
     			</tbody>
 			</table>
+				</div>
+
+			<div class="egg-bread-table" id="egg-bread-table">
+				<table>
+   				<tbody>
+        			<tr>
+           				<td class="rmve-brdr-lft rmve-brdr-top">&nbsp;</td>
+           				<td class="rmve-brdr-top">M</td>
+            			<td class="rmve-brdr-top">L</td>
+            			<td class="rmve-brdr-top rmve-brdr-rght">XL</td>
+        			</tr>
+        			<tr>
+           				<td class="rmve-brdr-lft">Сух. дрожжи</td>
+            			<td>1 ч.л.</td>
+            			<td>1&frac12; ч.л.</td>
+            			<td class="rmve-brdr-rght">2 ч.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Пшен. мука</td>
+            			<td>400 г</td>
+            			<td>500 г</td>
+            			<td class="rmve-brdr-rght">600 г</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Соль</td>
+            			<td>1 ⅔ ст.л.</td>
+            			<td>2 ст.л.</td>
+            			<td class="rmve-brdr-rght">2 ½ ст.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Сахар</td>
+            			<td>1 ⅔ ст.л.</td>
+            			<td>2 ст.л.</td>
+            			<td class="rmve-brdr-rght">2 ½ ст.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Сух. молоко</td>
+            			<td>1 ⅔ ст.л.</td>
+            			<td>2 ст.л.</td>
+            			<td class="rmve-brdr-rght">2 ½ ст.л.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Слив. масло</td>
+            			<td>1 ⅔ ст.л.</td>
+            			<td>2 ст.л.</td>
+            			<td class="rmve-brdr-rght">2 ½ ст.л.</td>
+        			</tr>
+        			<tr>
+            			<td>Яйца</td>
+            			<td>2 ш.т.</td>
+            			<td>2 ш.т.</td>
+            			<td class="rmve-brdr-rght">2 ш.т.</td>
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft rmve-brdr-btm">Вода</td>
+            			<td class="rmve-brdr-btm">160 мл</td>
+            			<td class="rmve-brdr-btm">230 мл</td>
+            			<td class="rmve-brdr-btm rmve-brdr-rght">270 мл</td>
+        			</tr>
+    			</tbody>
+			</table>
+			</div>
+
+			<div class="france-bread-table" id="france-bread-table">
+				<table>
+   				<tbody>
+        			<tr>
+           				<td class="rmve-brdr-lft rmve-brdr-top">Сухие дрожжи</td>
+           				<td class="rmve-brdr-top rmve-brdr-rght">1 ч.л.</td>            			
+        			</tr>        			
+        			<tr>
+            			<td class="rmve-brdr-lft">Пшен. мука</td>
+            			<td class="rmve-brdr-rght">400 г.</td>            			
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Соль</td>
+            			<td class="rmve-brdr-rght">¼ ч.л.</td>            			
+        			</tr>        			
+        			<tr>
+            			<td class="rmve-brdr-lft">Сух. молоко</td>
+            			<td class="rmve-brdr-rght">1 ½ с.л.</td>            			
+        			</tr>
+        			<tr>
+            			<td class="rmve-brdr-lft">Слив. масло</td>
+            			<td class="rmve-brdr-rght">1 с.л. (15 г)</td>            			
+        			</tr>        			
+        			<tr>
+            			<td class="rmve-brdr-lft rmve-brdr-btm">Вода</td>
+            			<td class="rmve-brdr-btm rmve-brdr-rght">250 мл</td>            			
+        			</tr>
+    			</tbody>
+			</table>
+			</div>	
+
+
+			</div>
 			<div class="back-recipes" id="get-back-to-main" onclick="getBackToMain()">back</div>
 		</div>		
 		<div class="black" id="black">
@@ -160,6 +266,7 @@
 <button class="add-button">Add to home screen</button>
 <script type="text/javascript" src="bread.js"></script>
 <script type="text/javascript" src="time.js"></script>
+<script type="text/javascript" src="recipesSwitch.js"></script>
 <script type="text/javascript" src="installpwa.js"></script>
 </body>
 </html>
