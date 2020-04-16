@@ -3,6 +3,7 @@
 <head>
 	<title>Work & Eye Care App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
@@ -23,10 +24,23 @@
 		<!-- disable footer part -->
 		<footer>
 			<div class="app-control">
-				
+				<div class="control-panel" id="control-panel" onclick="switchPanelDialog()">
+					<div class="settings-icon">⚙</div>
+					<div class="devide-settings-switch"></div>
+					<div class="switch-buttons">
+						<div>Eye Care</div>						
+						<div>Start Work</div>						
+					</div>
+				</div>
+				<div class="control-dialog" id="control-dialog" onclick="switchPanelDialog()">
+					
+				</div>
 			</div>
 		</footer>
 
 	</div>
+
+	<script type="text/javascript" src="js/control-panel.js"></script>
+
 </body>
 </html>
