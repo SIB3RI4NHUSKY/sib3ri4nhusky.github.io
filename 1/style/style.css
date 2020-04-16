@@ -39,6 +39,41 @@ body {
 	margin: 0 auto;
 }
 
+.timer-digits {
+	font-size: 150px;
+	text-align: center;
+}
+
+.overview-title {
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.overview-data {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+
+.overview-data-item-text {
+	width: 130px;
+	text-align: center;
+}
+
+.passed-stages-special-width {
+	width: 100px;
+}
+
+.overview-data-item-counter {
+	text-align: center;
+}
+
+.passed-stages-counter {
+	display: flex;
+	justify-content: center;
+}
+
 /* app-control */
 
 .app-control {
@@ -59,7 +94,7 @@ body {
 }
 
 .control-panel {	
-	font-size: 30px;
+	font-size: 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
