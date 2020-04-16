@@ -4,6 +4,7 @@
 }
 
 body {
+	min-height: 650px;
 	width: 100vw;
 	height: 100vh;
 	background-image: linear-gradient( 109.6deg,  rgba(123,90,224,1) 11.2%, rgba(164,46,253,1) 32.6%, rgba(213,56,234,1) 62.7%, rgba(251,138,52,1) 100.2% );
@@ -14,10 +15,11 @@ body {
 .container {
 	margin: 0 auto;
 	height: 100%;
-	max-width: 640px;
+	width: 340px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	/*border: 1px solid blue;*/
 }
 
 /* HEADER */
@@ -26,7 +28,7 @@ body {
 	font-size: 30px;
 	text-align: center;
 	list-style: 30px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	padding-top: 20px;
 }
 
@@ -40,8 +42,9 @@ body {
 }
 
 .timer-digits {
-	font-size: 150px;
+	font-size: 130px;
 	text-align: center;
+	transition: 0.4s;
 }
 
 .overview-title {
@@ -53,12 +56,13 @@ body {
 .overview-data {
 	display: flex;
 	justify-content: space-around;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .overview-data-item-text {
 	width: 130px;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .passed-stages-special-width {
@@ -84,16 +88,17 @@ body {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border: 1px solid violet;
+	border-bottom: 0;
 }
 
-.control-panel, .control-dialog {
+.control-panel, .control-dialog-work-timer-on, .control-dialog-pause-timer-on, .control-dialog-eye-care-on {
 	height: 75px;
 	width: 100%;
-	transition: 0.08s;
+	transition: 0.2s;
 	overflow: hidden;
 }
 
-.control-panel {	
+.control-panel, .control-dialog-work-timer-on {	
 	font-size: 25px;
 	display: flex;
 	justify-content: space-between;
@@ -111,7 +116,7 @@ body {
 	line-height: 75px;
 }
 
-.devide-settings-switch {
+.devide {
 	width: 1px;
 	height: 80%;
 	border-left: 1px solid violet;
@@ -125,4 +130,17 @@ body {
 	justify-content: space-around;
 	/*border: 1px solid lightgreen;*/
 	line-height: 75px;
+}
+
+.module-buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*border: 1px solid lightgreen;*/
+	line-height: 75px;
+}
+
+.pause-continue {
+	transition: 0.4s;	
 }

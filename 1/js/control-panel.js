@@ -1,14 +1,25 @@
-let isPanelOpen = true;
+let isTurnOn = true;
 
-function switchPanelDialog() {
-	if (isPanelOpen) {
-		document.getElementById('control-panel').style.height = '0px';
-		isPanelOpen = !isPanelOpen;
-		console.log("dialog's panel is open")
+
+
+function abortWorkTimer() {
+	document.getElementById('control-panel').style.height = '75px';
+	clearInterval(interval);
+	document.getElementById("timer-digits").innerHTML = '25:00';
+}
+
+function pauseContinue() {
+	if (isTurnOn) {
+		console.log(distance)
+		clearInterval(interval);
+		document.getElementById("pause-continue").style.color = '#ff0000';
+		document.getElementById("timer-digits").style.color = '#ff0000';
+		isTurnOn = !isTurnOn;
 	}
-	else if (!isPanelOpen) {
-		document.getElementById('control-panel').style.height = '75px';
-		isPanelOpen = !isPanelOpen;
-		console.log("dialog's panel is closed")
+	else if (!isTurnOn) {
+		document.getElementById("pause-continue").style.color = '#d5dbdb';
+		document.getElementById("timer-digits").style.color = '#d5dbdb';
+		calculateTime(Math.floor((distance % (1000 * 60)) / 1000), currentTimerTask);
+		isTurnOn = !isTurnOn;
 	}
 }

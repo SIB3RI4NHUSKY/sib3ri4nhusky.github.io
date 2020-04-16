@@ -18,25 +18,25 @@
 		<section>
 			<div class="app-itself">
 				<div class="work-timer-zone">
-					<div class="timer-digits" id="timer-digits">03:00</div>
+					<div class="timer-digits" id="timer-digits">25:00</div>
 					<div class="overview">
 						<div class="overview-title">overview</div>
 						<div class="overview-data">
 							<div class="overview-data-item">
 								<div class="overview-data-item-text">Stages before long break</div>
-								<div class="overview-data-item-counter">∞</div>
+								<div class="overview-data-item-counter">1</div>
 							</div>
 							<div class="overview-data-item">
 								<div class="overview-data-item-text passed-stages-special-width">Passed stages</div>
 								<div class="passed-stages-counter">
-									<div>∞</div>
+									<div>2</div>
 									<div>/</div>
-									<div>∞</div>
+									<div>3</div>
 								</div>
 							</div>
 							<div class="overview-data-item">
 								<div class="overview-data-item-text">Stages before eye warm up</div>
-								<div class="overview-data-item-counter">∞</div>
+								<div class="overview-data-item-counter">4</div>
 							</div>
 						</div>
 					</div>
@@ -47,16 +47,30 @@
 		<!-- disable footer part -->
 		<footer>
 			<div class="app-control">
-				<div class="control-panel" id="control-panel" onclick="switchPanelDialog()">
+				<div class="control-panel" id="control-panel">
 					<div class="settings-icon">⚙</div>
-					<div class="devide-settings-switch"></div>
+					<div class="devide"></div>
 					<div class="switch-buttons">
 						<div>Eye Care</div>						
-						<div>Start Work</div>						
+						<div onclick="startWork()" >Start Work</div>						
 					</div>
 				</div>
-				<div class="control-dialog" id="control-dialog" onclick="switchPanelDialog()">
-					
+				<div class="control-dialog-work-timer-on" id="control-dialog-work-timer-on">					
+					<div class="module-buttons">
+						<div onclick="abortWorkTimer()">Abort</div>						
+						<div class="pause-continue" id="pause-continue" onclick="pauseContinue()" >Pause / Continue</div>
+					</div>
+				</div>
+				<div class="control-dialog-pause-timer-on" id="control-dialog-pause-timer-on">
+					<div class="module-buttons">
+						<div>Abort</div>						
+						<div>Pause / Continue</div>						
+					</div>
+				</div>
+				<div class="control-dialog-eye-care-on" id="control-dialog-eye-care-on">
+					<div class="module-buttons">
+						<div>Get back</div>					
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -64,6 +78,8 @@
 	</div>
 
 	<script type="text/javascript" src="js/control-panel.js"></script>
-
+	<script type="text/javascript" src="js/timeEngine.js"></script>
+	<script type="text/javascript" src="js/startWork.js"></script>
+	<script type="text/javascript" src="js/startPause.js"></script>
 </body>
 </html>
