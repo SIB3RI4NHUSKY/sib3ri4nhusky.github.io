@@ -1,0 +1,15 @@
+{
+  "background_color": "violet",
+  "description": "Work & Eye Care App",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "name": "Work & Eye Care App",
+  "short_name": "Work & Eye Care App",
+  "start_url": "index.html"
+}
