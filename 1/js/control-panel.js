@@ -12,8 +12,8 @@ function pauseContinue() {
 	if (isTurnOn) {
 		console.log(distance)
 		clearInterval(interval);
-		document.getElementById("pause-continue").style.color = '#ff0000';
-		document.getElementById("timer-digits").style.color = '#ff0000';
+		document.getElementById("pause-continue").style.color = '#5DADE2';
+		document.getElementById("timer-digits").style.color = '#5DADE2';
 		isTurnOn = !isTurnOn;
 	}
 	else if (!isTurnOn) {
